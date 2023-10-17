@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+</head>
+
+
+<style>
+    body {
+        background-color:  #f2f4f4    ;
+    }
+    .title {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #484872;
+        font-weight: bold;
+    }
+    hr {
+        border: 1.5px solid violet;
+    }
+.one{
+    margin-top: 150px;
+
+}
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    html {
+    direction: rtl;
+}
+a {
+    text-decoration: none;
+}
+.text a{
+    background-color: red ;
+    border-radius: 10px; 
+    color: whitesmoke; 
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    margin: 50px 70px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    font-size: 18px;
+
+}
+.text a:hover {
+    background-color: whitesmoke;
+    color: red;
+}
+    .img{
+        display: flex; justify-content: center;
+    }
+    div img {
+        border-radius: 20px ;
+        border: 2px solid red ;
+        margin: 20px;
+        width: 400px;
+        height: 400px;
+    }
+    div h2 {
+        margin-right: 40px;
+        font-size: 24px;
+    }
+    div p {
+        margin: 40px;
+        font-size: 20px;
+    }
+    .footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+    }
+    .footer p {
+    color: whitesmoke;  
+    margin: 20px auto ;
+    }
+    /* ------------------------------------------------------------------------------------------- */
+    ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 22px;
+    color: red;
+    
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: red;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    cursor: pointer; 
+    display: none;
+}
+
+
+    /* ------------------mobile------------ */
+    @media only screen and (max-width:850px) {
+        .img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .image2{
+            display: none;
+        }
+        .image1 {
+            width: 90%;
+
+        }
+        .footer {
+        padding: 10px;
+        }
+/* ----------------------------------------------------------------------- */
+.menu-btn{
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top:0px ; 
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+
+
+
+
+    
+
+
+
+    
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><a href="./index.html" style="color: red;">آذربایجان شرقی</a></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">خانه</a></li>
+            <li><a href="./famous.html">مشاهیر</a></li>
+            <li><a href="./food.html">غداها</a></li>
+            <li><a href="./places.html">جاذبه های گردشگری</a></li>
+        </ul>
+        <img src="/img/menu.png" alt="menu" class="menu-btn">
+    </nav>
+    <hr>
+     
+     
+    
+     
+    <section class="one">
+         <h1  class="title">معروف ترین غذا های استان آذربایجان شرقی</h1> 
+        <div class="img">
+            <img src="img/kofte.jpg" alt="" class="image1">
+            <img src="img/kofte2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>کوفته تبریزی</h2>
+            <p>کوفته تبریزی (به ترکی آذربایجانی: تبریز کوفته‌سی) یکی از خوراک‌های مشهور ایران است که شهرت جهانی دارد
+            و منتسب به شهر تبریز است.
+            انواع کوفته در نقاط مختلف خاورمیانه تهیه می‌شود و نقطه تمایز کوفته تبریزی بیشتر در طرز تهیه و مواد استفاده شده در آن است.
+            در این خوراک از انواع سبزی‌های معطر استفاده می‌شود
+            و به‌طور سنتی گوشت این کوفته در یک هاون سنگی و با دسته هاونی چوبی، کوبیده شده و رفته رفته سبزی‌ها و لپه به آن اضافه می‌گردد.
+            امروزه اغلب برای آسان‌تر کردن روند کار به‌جای کوبیدن گوشت در هاون،
+            آن را چندین بار چرخ می‌کنند.
+            در آخر تخم‌مرغ آب‌پز، گردو و آلو خشک و آلبالو یا آلبالو خشک را داخل آن گذاشته
+            و با مخلوطی از پیازداغ، سبزی مخصوص و زرشک تزئین می‌گردد.
+            در آب این خوراک از رب گوجه فرنگی و زعفران به عنوان چاشنی استفاده می‌شود. </p>
+            <a href="https://chishi.ir/287-koufte-tabrizi/">طرز تهیه </a>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="img">
+            <img src="img/ashmas.jpg" alt="" class="image1">
+            <img src="img/ashmas2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>آش ماست</h2>
+            <p>آش ماست یکی از خوشمزه‌ترین آش‌های تبریز است 
+                که از پیاز، عدس، برنج، سبزی آش، آب گوشت، سیب‌زمینی، ماست، نخود، لوبیا، کلم برگ و هویج تهیه می‌شود.
+                البته اگر به همین آش کمی رشته بزنید، تبدیل به آش کشک می‌شود که آن را به جای ماست، کشک می‌خورند.
+                </p>
+            <a href="https://chishi.ir/735-ash-mast/">طرز تهیه </a>
+        </div>
+    </section>
+    <section class="three">
+        <div class="img">
+            <img src="img/dolma.jpg" alt="" class="image1">
+            <img src="img/dolma1.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>دلمه برگ مو</h2>
+            <p>دلمه برگ مو یکی از انواع غذاهای بسیار خوشمزه و معروف خاورمیانه است که در کشورمان ایران هم از محبوبیت بالایی برخوردار است.
+                 این غذای خوشمزه از ترکیب برنج به همراه گوشت، حبوبات و سبزیجات تهیه می شود و در برگ های درخت انگور پیچیده می شود. </p>
+            <a href="https://chishi.ir/339-dolme-barge-mo/"> طرز تهیه </a>
+        </div>
+        
+    </section>
+    <section class="four">
+        <div class="img">
+            <img src="img/havij.jpg" alt="" class="image1">
+            <img src="img/havij2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>خورش هویج</h2>
+            <p>خورش هویج یکی از غذاهای بسیار پرطرفدار میان تبریزی‌ها است،
+                اما شاید هر کسی طعم آن را دوست نداشته باشد.
+                برای تهیه‌ی این خورش، هویج‌ها را کبریتی خرد می‌کنند و با کمی روغن سرخ کرده و به آن نمک می‌افزایند.
+                سپس مرغ یا گوشت را با آب، پیاز تفت‌‌داده شده و رب گوجه‌فرنگی می‌پزند یا سرخ می‌کنند 
+                و برای دادن عطر و طعمی بهتر، هم به گوشت و هم به هویج‌ها زعفران اضافه می‌کنند. 
+                در نهایت آلو را به مرغ یا گوشت خود اضافه کرده و می‌گذارند تا کامل بپزد.
+                در پایان آب لیمو ترش را به هویج اضافه می‌کنند تا طعم شیرین نداشته باشد.</p>
+            <a href="https://chishi.ir/1175-khoresh-havij/"> طرز تهیه </a>
+        </div>
+            
+    </section>
+    <section class="five">
+        <div class="img">
+            <img src="img/lobia.jpg" alt="" class="image1">
+            <img src="img/lobia2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>کوکوی لوبیا سبز</h2>
+            <p>کوکوی لوبیا سبز یکی از قدیمی‌ترین کوکوهایی است که مردم تبریز اکثرا در مهمانی‌ها و مراسم افطاری ماه رمضان طبخ می‌کنند.
+                به عنوان یک تبریزی به شما پیشنهاد می‌کنم که یا خودتان این کوکوی خوشمزه را بپزید،
+                یا مهمان یک خانواده‌ی تبریزی شوید تا طعم بی‌نظیر آن را بچشید.
+                برای تهیه‌ی این کوکو به لوبیا سبز،
+                گوشت چرخ کرده، سیب زمینی،
+                هویج، پیاز، تخم مرغ و زعفران نیاز دارید.
+                برای تزئین آن هم از زرشک استفاده می‌کنند.</p>
+            <a href="https://chishi.ir/1843-kookoo-loobia-sabz/"> طرز تهیه </a>
+        </div>
+    </section>
+    <section class="six">
+        <div class="img" >
+            <img src="img/omaj.jpg" alt="" class="image1">
+            <img src="img/omaj2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>آش اوماج</h2>
+            <p>تبریزی‌ها معمولا آش اوماج را زمستان‌ها می‌پزند که برای سرما‌خوردگی بسیار مفید است.
+                 برای تهیه‌ی آش اوماج از پیاز فراوان، عدس، رشته یا اوماج
+                  (برای تهیه اوماج آرد را خمیر کرده و سپس آن را رنده می‌کنند)، 
+                  ریحان، مرزه، تره، فلفل و زردچوبه استفاده می‌کنند.</p>
+            <a href="https://chishi.ir/3563-ash-oumaj/"> طرز تهیه</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="footer">
+        <p>امیر مهدی رحمانی ، دانشکده فنی و حرفه ای شهید بهشتی ، پروژه کاردانی ، سال 1402</p>
+        <p>CopyRight © کپی رایت</p>
+
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+</body>
+</html>

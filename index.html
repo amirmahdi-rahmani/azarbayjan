@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آذربایجان شرقی</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- ------------navbar---------------->
+     <nav class="navbar">
+        <h1 class="logo">آذربایجان شرقی</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">خانه</a></li>
+            <li><a href="./famous.html">مشاهیر</a></li>
+            <li><a href="./food.html">غداها</a></li>
+            <li><a href="./places.html">جاذبه های گردشگری</a></li>
+        </ul>
+        <img src="/img/menu.png" alt="menu" class="menu-btn">
+     </nav>
+     <header>
+        <div class="header-content">
+        
+       
+        <h1>با آذربایجان شرقی بیشتر آشنا شوید </h1>
+        <a href="#" class="ctn">ادامه دهید </a>
+        </div>
+     </header>
+     <!-- ------------events----------- -->
+     <section class="events">
+        <div class="title">
+            <h1>مشاهیر آذربایجان شرقی</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/Shahriyar2.jpg" alt="">
+                <h4>استاد شهریار</h4>
+                <p>
+
+                    شهریار شاعر معاصر ایرانی اهل تبریز است که در سال‌ ۱۲۸۵ هجری شمسی در تبریز به دنیا آمد و در شهریور ۱۳۶۷ در تهران، چشم از جهان فروبست.  اما شهرت او به‌خاطر دیوان چهار جلدی غزلیات فارسی و منظومه حیدر بابا سلام به زبان ترکی آذری است.</p>
+                <a href="./famous.html#Shahriyar" class="ctn">ادامه دهید</a>
+            </div>
+            <div class="col">
+                <img src="img/babak1.jpg" alt="">
+                <h4>بابک خرمدین </h4>
+                <p>بابک خرمدین یکی از رهبران اصلی انقلابی ایران در خرم دینان 
+                    ایران بود که یک جنبش آزادی خواه محلی بود که با خلافت عباسی می جنگید.به خاطر غیرقابل دسترس بودن موقعیت جایگاه بابک، قدرت او بسیار زیاد بود و ....
+                </p>
+                <a href="./famous.html#Babak" class="ctn">ادامه دهید</a>
+            </div>
+        </div>
+     </section>
+     <section class="explore">
+        <div class="explore-content">
+            <h1> غذا های استان آذربایجان شرقی</h1>
+            <div class="line"></div>
+        <p> تبریز مرکز استان آذربایجان شرقی، یکی از بزرگترین شهر های ایران است که دارای غذاهای محلی لذیذ و محبوبی مانند کوفته تبریزی، کوکوی لوبیا سبز، آش ماست، دلمه برگ مو، آش میوه، آش آبغوره و … می باشد.</p>
+        <a href="./food.html" class="ctn">ادامه دهید </a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1> جاذبه های گردشگری در آذربایجان شرقی</h1>
+                <div class="line"></div>
+                <p>
+                    آذربایجان شرقی، یکی از جذاب‌ترین استان‌های نیمه شمال غرب ایران است.
+                     تاریخ غنی و مردم مهمان‌نواز، با ویژگی‌‌های فرهنگی خاص این دیار، بر جذابیت‌های این استان زیبا افزوده است. 
+                     اگر قصد سر زدن به استان آذربایجان شرقی دارید، باید لیست بلندبالایی از مراکز دیدنی تهیه کنید..</p>
+                    <a href="./places.html" class="ctn"> ادامه دهید </a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/Arasbaran.jpg" alt="">
+                    <img src="img/kan2.jpg" alt="">
+                    <img src="img/Ala.jpg" alt="">
+                    <img src="img/Babak.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>امیر مهدی رحمانی ، دانشکده فنی و حرفه ای شهید بهشتی ، پروژه کاردانی ، سال 1402</p>
+        <p>CopyRight © کپی رایت</p>
+
+    </section>
+     <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+</body>
+</html>

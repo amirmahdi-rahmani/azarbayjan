@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+</head>
+
+
+<style>
+    body {
+        background-color:  #f2f4f4    ;
+    }
+    .title {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #484872;
+        font-weight: bold;
+    }
+    hr {
+        border: 3px solid violet;
+    }
+.one{
+    margin-top: 150px;
+
+}
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    html {
+    direction: rtl;
+}
+a {
+    text-decoration: none;
+}
+.text a{
+    background-color: red ;
+    border-radius: 10px; 
+    color: whitesmoke; 
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    margin: 50px 70px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    font-size: 18px;
+
+}
+.text a:hover {
+    background-color: whitesmoke;
+    color: red;
+}
+    .img{
+        display: flex; justify-content: center;
+    }
+    div img {
+        border-radius: 20px ;
+        border: 2px solid red ;
+        margin: 20px;
+        width: 400px;
+        height: 400px;
+    }
+    div h2 {
+        margin-right: 40px;
+        font-size: 24px;
+    }
+    div p {
+        margin: 40px;
+        font-size: 20px;
+    }
+    .footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+    }
+    .footer p {
+    color: whitesmoke;  
+    margin: 20px auto ;
+    }
+    /* ------------------------------------------------------------------------------------------- */
+    ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 22px;
+    color: red;
+    
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: red;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    cursor: pointer; 
+    display: none;
+}
+
+
+    /* ------------------mobile------------ */
+    @media only screen and (max-width:850px) {
+        .img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .image2{
+            display: none;
+        }
+        .image1 {
+            width: 90%;
+
+        }
+        .footer {
+        padding: 10px;
+        }
+/* ----------------------------------------------------------------------- */
+.menu-btn{
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top:0px ; 
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+
+
+
+
+    
+
+
+
+    
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><a href="./index.html" style="color: red;">آذربایجان شرقی</a></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">خانه</a></li>
+            <li><a href="./famous.html">مشاهیر</a></li>
+            <li><a href="./food.html">غداها</a></li>
+            <li><a href="./places.html">جاذبه های گردشگری</a></li>
+        </ul>
+        <img src="/img/menu.png" alt="menu" class="menu-btn">
+    </nav>
+    <hr>
+     
+     
+    
+     
+    <section class="one">
+         <h1  class="title">جاذبه های گردشگری آذربایجان شرقی</h1> 
+        <div class="img">
+            <img src="img/kan1.jpg" alt="" class="image1">
+            <img src="img/kan2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>روستای کندوان</h2>
+            <p>
+                روستای سنگی کندوان، یکی از روستاهای خاص ایران است که در آذربایجان شرقی قرار دارد. 
+                دلیل خاص بودن این روستا، خانه‌هایی است که در دل کوه کنده شده‌اند و هنوز هم ساکنین روستا در همین خانه‌ها سکونت دارند.
+                کندوان با داشتن آب و هوای خنک و معتدل در تابستان یکی از مقاصد اصلی سفر در تابستان است.
+                کندوان در جنوب تبریز و در منطقه سهند قرار دارد .
+                برای رسیدن به کندوان باید ابتدا خود را به تبریز و اسکو برسانید و سپس وارد مسیر کندوان شوید.
+                راستی،‌ حواستان باشد که حتی در تابستان، حتما لباس گرم همراه داشته باشید تا در صورت سرد شدن هوا، به مشکل نخورید. </p>
+            <a href="https://fa.wikipedia.org/wiki/%DA%A9%D9%86%D8%AF%D9%88%D8%A7%D9%86">بیشتر بدانید </a>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="img">
+            <img src="img/El-Goli1.jpg" alt="" class="image1">
+            <img src="img/El-Goli2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>ائل گلی</h2>
+            <p>
+                ائل گلی یکی از معروف‌ترین جاهای دیدنی تبریز است که در بخش جنوب شرقی این شهر قرار دارد.
+                عمارت ائل گلی در میان یک دریاچه مصنوعی قرار دارد که با درختان و پارک احاطه شده است.
+                 ائل گلی که قبل از انقلاب شاه گلی نام داشت، در زبان ترکی به معنای دریاچه مردم (دریاچه شاه قبل از انقلاب) است.
+                برای رسیدن به این مجموعه می‌توانید از مترو استفاده کنید و در ایستگاه مترو ائل گلی پیاده شوید یا خود را به بلوار ائل گلی برسانید.
+                </p>
+            <a href="https://fa.wikipedia.org/wiki/%D8%A7%D8%A6%D9%84%E2%80%8C%DA%AF%D9%84%DB%8C">بیشتر بدانید </a>
+        </div>
+    </section>
+    <section class="three">
+        <div class="img">
+            <img src="img/aras.jpg" alt="" class="image1">
+            <img src="img/Arasbaran400.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>ارسباران</h2>
+            <p>
+                سباران از جاهای دیدنی استان آذربایجان شرقی است که با چشم‌اندازهای طبیعی و خارق‌العاده و نیز آثار تاریخی ارزشمند،
+                یکی از مناطق محبوب گردشگری در شمال غربی ایران محسوب می‌شود.
+                البته نباید از این نکته غافل شد که این منطقه‌ زیبای کوهستانی و جنگلی
+                نسبت به سایر مناطق جنگلی در شمال کشور، ناشناخته‌تر مانده و بسیار کمتر به آن پرداخته شده است.
+                همچنین نباید شباهت ساختاری جنگل ارسباران را با جنگل های شمالی کشور،
+                که از نوع ساختار هیرکانی است، نادیده گرفت. با تمام این اوصاف، این منطقه جنگلی،
+                سالانه میزبان جمع بسیاری از گردشگران و مسافران از سراسر ایران و جهان است که
+                برای تماشای دیدنی‌های شگفت‌انگیز طبیعی آن و نیز بازدید از آثار تاریخی این منطقه‌ زیبا، به آذربایجان شرقی سفر می‌کنند. 
+                </p>
+            <a href="https://fa.wikipedia.org/wiki/%D8%A7%D8%B1%D8%B3%D8%A8%D8%A7%D8%B1%D8%A7%D9%86"> بیشتر بدانید </a>
+        </div>
+        
+    </section>
+    <section class="four">
+        <div class="img">
+            <img src="img/gBabak.jpg" alt="" class="image1">
+            <img src="img/gBabak2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>قلعه بابک</h2>
+            <p>
+                قلعه بابک واقع در شهر کلیبر استان آذربایجان شرقی، از معروف‌ترین قلعه های تاریخی ایران و از جاهای دیدنی استان آذربایجان شرقی است
+                که محلی ایدئال برای علاقه‌مندان به تاریخ به حساب می‌آید. این قلعه که در منطقه زیبای ارسباران جای گرفته،
+                به‌مدت ۲۰ سال محل زندگی و مبارزه بابک خرمدین، از شناخته‌شده‌ترین سرداران ایرانی بوده است. 
+                او و يارانش به‌واسطه این دژ کهن توانستند لشکريان عرب را برای بيست و چند سال در کوه‌ها سرگردان کنند، به آن‌ها شبیخون بزنند و باعث فرارشان شوند.
+                با اینکه مسیر دسترسی به قلعه مستلزم کوه‌پیمایی است و شاید دشوار به‌ نظر برسد، جنبه تاریخی این قلعه
+                و همین طور چشم‌انداز خیره‌کننده آن به کوه‌ها و مناطق اطراف، ارزش این سختی را دارد.
+                قلعه بابک در سال ۱۳۴۵ در فهرست آثار ملی ایران قرار گرفت و مرمت آن از سال ۱۳۷۶ آغاز شد.
+                اگر به آثار تاریخی علاقه دارید، در سفر به آذربایجان شرقی می‌توانید با صعود بر فراز قلعه بابک، یک ماجراجویی مهیج و جذاب را تجربه کنید
+            </p>
+            <a href="https://fa.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D9%87_%D8%A8%D8%A7%D8%A8%DA%A9"> بیشتر بدانید </a>
+        </div>
+            
+    </section>
+    <section class="five">
+        <div class="img">
+            <img src="img/Ala1.jpg" alt="" class="image1">
+            <img src="img/ala2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>آلاداغ لار</h2>
+            <p>
+                کوه‌های رنگی رشته کوه‌هایی هستند که بخش بزرگی از شمال غرب و حتی شرق ایران را در برمی‌گیرند.
+                در آذربایجان شرقی و زنجان، بخش بزرگی از این کوه‌های رنگی قرار دارد که به آلاداغ لار معروف هستند.
+                دلیل رنگی بودن این کوه‌ها وجود مواد معدنی مختلف در خاک فشرده این کوه‌ها و اکسید شدن این مواد در تماس با اکسیژن هوا است.
+                برای رسیدن به کوه‌های آلاداغ لار می‌توانید مسیر خود را از زنجان به سمت تبریز شروع کنید و در مسیر از این منظره زیبا لذت ببرید.
+                همچنین پس از عبور از تبریز و در مسیر به سمت اهر نیز بخش‌های از کوه‌های رنگی زیبا وجود دارد که می‌توانید از نزدیک از آن‌ها دیدن کنید.
+            </p>
+            <a href="https://www.kojaro.com/attraction/22535-%DA%A9%D9%88%D9%87%D9%87%D8%A7%DB%8C-%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%BA-%D9%84%D8%A7%D8%B1/"> بیشتر بدانید </a>
+        </div>
+    </section>
+    <section class="six">
+        <div class="img" >
+            <img src="img/kelisa1.jpg" alt="" class="image1">
+            <img src="img/kelisa2.jpg" alt="" class="image2">
+        </div>
+        <div class="text">
+            <h2>کلیسای سنت استپانوس</h2>
+            <p>کلیسای سنت استپانوس (استپانوس مقدس) یکی از مشهورترین، مهم‌ترین و البته زیباترین کلیساهای تاریخی ارامنه در ایران است.
+                این کلیسا در نزدیکی مرز ایران و آذربایجان و در بخش جنوبی رودخانه ارس قرار دارد. فاصله کلیسای سنت استپانوس از شهرستان جلفا در حدود ۲۰ کیلومتر است
+                و برای رسیدن به آن باید به سمت شمال غربی جلفا حرکت کنید و از جاده مرزی بگذرید. سنت استپانوس در منطقه‌ای کوهستانی-دره‌ای قرار گرفته است.
+                به دلیل موقعیت خاص این کلیسا و معماری منحصر به‌فردش یکی از معروف‌ترین جاهای دیدنی آذربایجان شرقی است.
+                این کلیسا چندین سال است که در دست مرمت و از میراث جهانی ثبت شده در یونسکو است.
+                 در رابطه با ساخت اولیه کلیسا چندین روایت مختلف وجود دارد و دقیقا مشخص نیست اما طبق آخرین تحقیقات، ساخت کلیسا به دوره صفوی برمی‌گردد.
+                 سنت استپانوس یکی از یاران اصلی حضرت عیسی (ع) و اولین شهید در راه ابلاغ دین مسیحیت بوده است که این کلیسا با یاد این قدیس بزرگ، چنین نام گرفته است. 
+                </p>
+            <a href="https://fa.wikipedia.org/wiki/%DA%A9%D9%84%DB%8C%D8%B3%D8%A7%DB%8C_%D8%A7%D8%B3%D8%AA%D9%BE%D8%A7%D9%86%D9%88%D8%B3_%D9%85%D9%82%D8%AF%D8%B3"> بیشتر بدانید</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="footer">
+        <p>امیر مهدی رحمانی ، دانشکده فنی و حرفه ای شهید بهشتی ، پروژه کاردانی ، سال 1402</p>
+        <p>CopyRight © کپی رایت</p>
+
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+</body>
+</html>
