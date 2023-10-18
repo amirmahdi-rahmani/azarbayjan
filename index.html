@@ -8,27 +8,36 @@
 </head>
 <body>
     
-    <!-- ------------navbar---------------->
+    <!-------------------------------------- Navbar -------------------------------------->
      <nav class="navbar">
         <h1 class="logo">آذربایجان شرقی</h1>
         <ul class="nav-links">
-            <li class="active"><a href="./index.html">خانه</a></li>
+            <li ><a href="./index.html">خانه</a></li>
             <li><a href="./famous.html">مشاهیر</a></li>
-            <li><a href="./food.html">غداها</a></li>
+            <li><a href="./food.html">غذاها</a></li>
             <li><a href="./places.html">جاذبه های گردشگری</a></li>
         </ul>
         <img src="/img/menu.png" alt="menu" class="menu-btn">
      </nav>
+    <!-------------------------------------- Navbar -------------------------------------->
+
+    <!-------------------------------------- Header -------------------------------------->
+
+
      <header>
         <div class="header-content">
         
        
         <h1>با آذربایجان شرقی بیشتر آشنا شوید </h1>
-        <a href="#" class="ctn">ادامه دهید </a>
+        <a href="./index.html#SecFam" class="ctn">ادامه دهید </a>
         </div>
      </header>
-     <!-- ------------events----------- -->
-     <section class="events">
+
+    <!-------------------------------------- Header -------------------------------------->
+
+    <!-------------------------------------- Section Famous -------------------------------------->
+
+     <section class="Section-Famous" id="SecFam">
         <div class="title">
             <h1>مشاهیر آذربایجان شرقی</h1>
             <div class="line"></div>
@@ -52,15 +61,23 @@
             </div>
         </div>
      </section>
-     <section class="explore">
-        <div class="explore-content">
+    <!-------------------------------------- Section Famous -------------------------------------->
+
+    <!-------------------------------------- Section Food -------------------------------------->
+
+     <section class="Section-Food">
+        <div class="Food-content">
             <h1> غذا های استان آذربایجان شرقی</h1>
             <div class="line"></div>
         <p> تبریز مرکز استان آذربایجان شرقی، یکی از بزرگترین شهر های ایران است که دارای غذاهای محلی لذیذ و محبوبی مانند کوفته تبریزی، کوکوی لوبیا سبز، آش ماست، دلمه برگ مو، آش میوه، آش آبغوره و … می باشد.</p>
         <a href="./food.html" class="ctn">ادامه دهید </a>
         </div>
     </section>
-    <section class="tours">
+    <!-------------------------------------- Section Food -------------------------------------->
+
+    <!-------------------------------------- Section Places -------------------------------------->
+
+    <section class="Section-Places">
         <div class="row">
             <div class="col content-col">
                 <h1> جاذبه های گردشگری در آذربایجان شرقی</h1>
@@ -81,12 +98,19 @@
             </div>
         </div>
     </section>
+    <!-------------------------------------- Section Places -------------------------------------->
+
+    <!-------------------------------------- Section Footer -------------------------------------->
 
     <section class="footer">
         <p>امیر مهدی رحمانی ، دانشکده فنی و حرفه ای شهید بهشتی ، پروژه کاردانی ، سال 1402</p>
         <p>CopyRight © کپی رایت</p>
 
     </section>
+    <!-------------------------------------- Section Footer -------------------------------------->
+
+    <!-------------------------------------- Script -------------------------------------->
+
      <script>
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
@@ -96,5 +120,7 @@
             navlinks.classList.toggle('mobile-menu')
         })
      </script>
+    <!-------------------------------------- Script -------------------------------------->
+
 </body>
 </html>

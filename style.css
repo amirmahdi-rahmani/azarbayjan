@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
-/* ------------- Global ------------------- */
+
+/* -------------------------------------- Global -------------------------------------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -22,15 +24,40 @@ ul li a{
     
 }
 
-.active {
-    color: #fc036b;
-    text-decoration: underline;
-    font-weight: bold;
-}
 body , html {
     overflow-x: hidden;
 }
-/* ----------navbar--------------- */
+ul li a:hover{
+    color: white;
+    
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.ctn {
+    padding: 8px 15px;
+    background:#fc036b;
+    border-radius: 30px;
+    color:whitesmoke
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c; 
+    padding: 0 40px;
+}
+/* -------------------------------------- Global -------------------------------------- */
+
+/* -------------------------------------- Navbar -------------------------------------- */
+
+
 .navbar {
     position: absolute;
     top: 0;
@@ -48,6 +75,10 @@ body , html {
 .nav-links li {
     margin: 0 30px;
 }
+/* -------------------------------------- Navbar -------------------------------------- */
+
+/* -------------------------------------- Header -------------------------------------- */
+
 header{
     width: 100vw;
     height: 100vh;
@@ -66,24 +97,14 @@ header{
 .header-content h2 {
     font-size: 4vmin;
 }
-.line{
-    width: 150px;
-    height: 4px;
-    background: #fc036b;
-    margin: 10px auto;
-    border-radius: 5px;
-}
+
 .header-content h1 {
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.ctn {
-    padding: 8px 15px;
-    background:#fc036b;
-    border-radius: 30px;
-    color:whitesmoke
-}
+/* -------------------------------------- Mobile Menu -------------------------------------- */
+
 .menu-btn {
     position: absolute;
     top: 30px;
@@ -92,9 +113,13 @@ header{
     cursor: pointer; 
     display: none;
 }
+/* -------------------------------------- Mobile Menu -------------------------------------- */
+
+/* -------------------------------------- Header -------------------------------------- */
 
 
-/* -------events------- */
+/* -------------------------------------- Sections -------------------------------------- */
+
 section{
     width: 80%;
     margin: 80px auto;
@@ -117,27 +142,28 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.events .row {
+
+/* -------------------------------------- Sections -------------------------------------- */
+
+/* -------------------------------------- Sections Famous -------------------------------------- */
+
+.Section-Famous .row {
     margin-top: 50px;
 }
-.events img {
+.Section-Famous img {
     border: 3px solid #fc036b ;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
 }
-h4 {
-    font-size: 3vmin;
-    color: #484872;
-    margin: 20px auto;
-}
-p {
-    color: #7c7c7c; 
-    padding: 0 40px;
-}
-.events .ctn {
+
+.Section-Famous .ctn {
     margin-top: 30px;
 }
-.explore {
+/* -------------------------------------- Sections Famous -------------------------------------- */
+
+/* -------------------------------------- Sections Food -------------------------------------- */
+
+.Section-Food {
     width: 100%;
     height: 100vh;
     background-image: url('img/Dolma2.jpg');
@@ -147,7 +173,7 @@ p {
     display: flex;
     align-items: center;
 }
-.explore-content {
+.Food-content {
     width: 50%;
     padding: 50px;
     color: whitesmoke; 
@@ -155,16 +181,16 @@ p {
     align-items: center;
     flex-direction: column;
 }
-.explore-content h1 {
+.Food-content h1 {
     font-size: 7vmin;
 }
-.explore-content .line {
+.Food-content .line {
     margin-bottom : 50px;
 }
-.explore-content p {
+.Food-content p {
     color: white;
 }
-.explore-content .ctn {
+.Food-content .ctn {
     margin-top: 40px;
 }
 .content-col {
@@ -173,7 +199,11 @@ p {
 .image-col {
     width: 60%;
 }
-.tours .image-gallery {
+/* -------------------------------------- Sections Food -------------------------------------- */
+
+/* -------------------------------------- Sections Places -------------------------------------- */
+
+.Section-Places .image-gallery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -198,6 +228,10 @@ p {
 .content-col .ctn {
     margin-right: -100px;
 }
+/* -------------------------------------- Sections Food -------------------------------------- */
+
+/* -------------------------------------- Sections Footer -------------------------------------- */
+
 .footer {
     width: 100%;
     min-height: 100px;
@@ -210,8 +244,13 @@ p {
     color: whitesmoke;  
     margin: 20px auto ;
 }
-/* --------------- Mobile Device ---------------- */
+/* -------------------------------------- Sections Footer -------------------------------------- */
+
+/* -------------------------------------- Mobile Device -------------------------------------- */
+
 @media only screen and (max-width:850px) {
+/* -------------------------------------- NAv-Menu Mobile -------------------------------------- */
+
     .menu-btn{
         display: block;
     }
@@ -239,7 +278,10 @@ p {
     .nav-links li {
         margin: 30px auto;
     }
-    /* ----------events------------ */
+/* -------------------------------------- NAv-Menu Mobile -------------------------------------- */
+
+/* -------------------------------------- Sections Mobile -------------------------------------- */
+
     .row{
         flex-direction: column;
     }
@@ -249,11 +291,19 @@ p {
     .col img {
         max-width: 90% ;
     }
-    /* -----------explore---------- */
-    .explore-content {
+/* -------------------------------------- Sections Mobile -------------------------------------- */
+
+/* -------------------------------------- Food Mobile -------------------------------------- */
+
+    .Food-content {
         width: 100%;
     }
-    .tours .col {
+/* -------------------------------------- Food Mobile -------------------------------------- */
+
+
+/* -------------------------------------- Places Mobile -------------------------------------- */
+
+    .Section-Places .col {
         width: 100%;
     }
     .image-gallery {
@@ -263,12 +313,21 @@ p {
     .image-gallery img {
         width: 90%;
     }
+/* -------------------------------------- Places Mobile -------------------------------------- */
+
+
+/* -------------------------------------- Footer Mobile -------------------------------------- */
+
     .footer {
         padding: 10px;
     }
 }
+/* -------------------------------------- Footer Mobile -------------------------------------- */
 
-/* -----------animation--------- */
+/* -------------------------------------- Mobile Device -------------------------------------- */
+
+/* -------------------------------------- Animation -------------------------------------- */
+
 img {
     transition: transform .3s ease;
 }
@@ -283,3 +342,5 @@ img:hover {
 li:hover {
     color: lime;
 }
+
+/* -------------------------------------- Animation -------------------------------------- */

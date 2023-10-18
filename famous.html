@@ -8,6 +8,8 @@
 
 
 <style>
+ /* -------------------------------------- Global --------------------------------------   */
+    
     body {
         background-color:  #f2f4f4    ;
     }
@@ -19,12 +21,10 @@
         font-weight: bold;
     }
     hr {
-        border: 1.5px solid violet;
-    }
-.one{
-    margin-top: 150px;
+        border: 2.7px solid violet;
 
-}
+    }
+
     *{
     margin: 0;
     padding: 0;
@@ -35,6 +35,20 @@
 }
 a {
     text-decoration: none;
+}
+.img{
+        display: flex; justify-content: center;
+    }
+    ul{
+    list-style: none;
+}
+ /* -------------------------------------- Global --------------------------------------   */
+
+ /* -------------------------------------- Content --------------------------------------   */
+
+ .one{
+    margin-top: 150px;
+
 }
 .text a{
     background-color: red ;
@@ -53,9 +67,7 @@ a {
     background-color: whitesmoke;
     color: red;
 }
-    .img{
-        display: flex; justify-content: center;
-    }
+    
     div img {
         border-radius: 20px ;
         border: 2px solid red ;
@@ -71,6 +83,10 @@ a {
         margin: 40px;
         font-size: 20px;
     }
+ /* -------------------------------------- Content --------------------------------------   */
+
+ /* -------------------------------------- Footer --------------------------------------   */
+    
     .footer {
     width: 100%;
     min-height: 100px;
@@ -83,10 +99,10 @@ a {
     color: whitesmoke;  
     margin: 20px auto ;
     }
-    /* ------------------------------------------------------------------------------------------- */
-    ul{
-    list-style: none;
-}
+ /* -------------------------------------- Footer --------------------------------------   */
+
+ /* -------------------------------------- Nav --------------------------------------   */
+
 ul li a{
     font-size: 22px;
     color: red;
@@ -117,9 +133,10 @@ ul li a{
     cursor: pointer; 
     display: none;
 }
+ /* -------------------------------------- Nav --------------------------------------   */
 
+ /* -------------------------------------- Mobile --------------------------------------   */
 
-    /* ------------------mobile------------ */
     @media only screen and (max-width:850px) {
         .img{
             display: flex;
@@ -138,8 +155,8 @@ ul li a{
         .footer {
         padding: 10px;
         }
-/* ----------------------------------------------------------------------- */
-.menu-btn{
+
+        .menu-btn{
         display: block;
     }
     .navbar {
@@ -167,32 +184,28 @@ ul li a{
         margin: 30px auto;
     }
 
-
-
-
-
-    
-
-
-
-    
     }
+ /* -------------------------------------- Mobile --------------------------------------   */
+
 </style>
 <body>
+ <!-- -------------------------------------- Nav --------------------------------------  -->
+
     <nav class="navbar">
         <h1 class="logo"><a href="./index.html" style="color: red;">آذربایجان شرقی</a></h1>
         <ul class="nav-links">
-            <li class="active"><a href="./index.html">خانه</a></li>
-            <li><a href="./famous.html">مشاهیر</a></li>
-            <li><a href="./food.html">غداها</a></li>
+            <li ><a href="./index.html">خانه</a></li>
+            <li ><a href="./famous.html">مشاهیر</a></li>
+            <li><a href="./food.html">غذاها</a></li>
             <li><a href="./places.html">جاذبه های گردشگری</a></li>
         </ul>
-        <img src="/img/menu.png" alt="menu" class="menu-btn">
+        <img src="./img/menu.png" alt="menu" class="menu-btn">
     </nav>
     <hr>
      
-     
-    
+ <!-- -------------------------------------- Nav --------------------------------------  -->
+
+ <!-- -------------------------------------- Footer --------------------------------------  -->
      
     <section class="one" id="Babak">
          <h1  class="title">مشاهیر آذربایجان شرقی</h1> 
@@ -327,17 +340,19 @@ ul li a{
         </div>
     </section>
 
+ <!-- -------------------------------------- Content --------------------------------------  -->
 
-
-
-
-
+ <!-- -------------------------------------- Footer --------------------------------------  -->
 
     <section class="footer">
         <p>امیر مهدی رحمانی ، دانشکده فنی و حرفه ای شهید بهشتی ، پروژه کاردانی ، سال 1402</p>
         <p>CopyRight © کپی رایت</p>
 
     </section>
+ <!-- -------------------------------------- Footer --------------------------------------  -->
+
+ <!-- -------------------------------------- Script --------------------------------------  -->
+
     <script>
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
@@ -347,5 +362,7 @@ ul li a{
             navlinks.classList.toggle('mobile-menu')
         })
      </script>
+ <!-- -------------------------------------- Script --------------------------------------  -->
+
 </body>
 </html>
